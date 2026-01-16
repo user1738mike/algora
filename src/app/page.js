@@ -182,25 +182,29 @@ export default function Home() {
       <div className="app" ref={container}>
         <section className="hero">
           <div className="hero-img">
-            <img src="/images/home/hero.jpeg" alt="" />
+            <img
+              src="/images/home/pexels-arinda-gracious-742222390-28536810.jpg"
+              alt=""
+            />
           </div>
           <div className="hero-img-overlay"></div>
           <div className="hero-img-gradient"></div>
           <div className="container">
             <div className="hero-copy">
               <div className="hero-copy-col">
-                <ShuffleText as="h3" text="A brief journey into" />
-                <ShuffleText as="h1" text="The Fusion of Art and Algorithms" />
-              </div>
-              <div className="hero-copy-col">
-                <div className="hero-icon">
-                  <img src="/images/home/hero-abstract-icon.png" alt="" />
+                <ShuffleText
+                  as="h1"
+                  text="Turning Old Clothes Into Everyday Impact"
+                />
+                <div className="hero-cta-buttons">
+                  <Link href="/advertise" className="hero-cta-primary">
+                    Advertise With Us
+                  </Link>
                 </div>
               </div>
             </div>
           </div>
         </section>
-
         <section className="intro" id="intro">
           <div className="geo-bg">
             <GeometricBackground />
@@ -214,45 +218,52 @@ export default function Home() {
               <div className="col">
                 <div className="intro-copy">
                   <p>
-                    Algora has revolutionized the creative potential of AI,
-                    advancing from basic, low-resolution outputs to producing
-                    hyper-realistic, high-definition visuals that push the
-                    boundaries of imagination and innovation.
+                    Rebag has revolutionized textile waste, transforming
+                    discarded clothing destined for landfills into beautiful,
+                    handcrafted bags that prove sustainability and style are not
+                    mutually exclusive.
                   </p>
                   <p>
-                    This progress has opened the doors to powerful visual
-                    creation tools for users of all skill levels, from seasoned
-                    professionals to casual creators. Yet, it has also raised
-                    critical debates around the ethical challenges of
-                    AI-generated content, such as intellectual property
-                    disputes, the spread of false information, and questions
-                    surrounding the essence of true artistic expression.
+                    Behind every bag is a skilled artisan building a sustainable
+                    livelihood. We train individuals from underserved
+                    communities in textile upcycling, pattern making, and
+                    responsible production, providing stable income and
+                    transferable skills. Donated clothes become the raw material
+                    for this work, while our revenue model ensures long-term
+                    impact: business partners distribute our bags at scale, and
+                    mission-aligned advertisers fund production by using each
+                    bag as a mobile billboard. Purchases and partnerships
+                    directly finance job training and fair wages. This is not
+                    charity; it is a circular economy that creates value for
+                    donors, dignified work for artisans, visibility for partners
+                    and advertisers, and a durable product carried by customers
+                    as a visible statement of positive change.
                   </p>
                 </div>
                 <div className="prompt-example">
                   <div className="prompt-example-header">
                     <h4>
-                      // PROMPT: A sci-fi fashion portrait of a person in
-                      futuristic attire
+                      // A PORTRAIT OF PURPOSE: SOMEONE WHOSE BAG CARRIES MORE
+                      THAN BELONGINGS
                     </h4>
                   </div>
                   <div className="prompt-example-results">
                     <div className="prompt-example-result-item">
                       <div className="prompt-example-result-item-img">
-                        <img src="/images/home/prompt-1.jpeg" alt="" />
+                        <img src="/images/home/sewing.jpg" alt="" />
                         <div className="hero-img-overlay"></div>
                       </div>
                       <div className="prompt-example-result-item-title">
-                        <h4>2016 — Built with pioneering generative tools</h4>
+                        <h4>HANDCRAFTED USING ZERO-WASTE TECHNIQUES</h4>
                       </div>
                     </div>
                     <div className="prompt-example-result-item">
                       <div className="prompt-example-result-item-img">
-                        <img src="/images/home/prompt-2.jpeg" alt="" />
+                        <img src="/images/home/collectin.jpeg" alt="" />
                         <div className="hero-img-overlay"></div>
                       </div>
                       <div className="prompt-example-result-item-title">
-                        <h4>2024 — Created with Algora V2</h4>
+                        <h4>CRAFTED THROUGH THE REBAG PROCESS</h4>
                       </div>
                     </div>
                   </div>
@@ -261,7 +272,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
         <section className="case-studies" id="case-studies">
           <div className="case-studies-header">
             <div className="container">
@@ -279,37 +289,39 @@ export default function Home() {
               </div>
               <div className="col">
                 <div className="case-studies-copy">
-                  <h2>How is AI Reshaping Artistic Boundaries?</h2>
+                  <h2>How is Sustainable Design Reshaping What We Carry?</h2>
                   <p>
-                    Generative AI has rapidly advanced, moving beyond its humble
-                    beginnings of basic visual outputs to now creating stunning,
-                    lifelike artworks that challenge our perceptions of
-                    creativity and technology.
+                    Consumer consciousness has rapidly shifted, moving beyond
+                    guilt-driven eco-choices to actively seeking beautiful,
+                    recycled products that reflect personal values and challenge
+                    throwaway culture.
                   </p>
                 </div>
               </div>
             </div>
           </div>
         </section>
-
         <section className="case-studies-items">
           <div className="case-studies-items-content col">
             <div className="case-studies-item case-studies-item-1">
               <div className="container">
-                <h3>Art in the Age of Algorithms</h3>
-                <p className="primary">[ Lumina Horizon — Zara Lee ]</p>
+                <h3>Craftsmanship in the Age of Waste</h3>
+                <p className="primary">
+                  [ THREADS OF RENEWAL — AMARA OCHIENG ]
+                </p>
                 <div className="case-studies-item-inner-img">
                   <img
-                    src="/images/home/case-study-1.jpeg"
+                    src="/images/home/collection2.png"
                     alt="Futuristic AI-generated art"
                   />
                 </div>
                 <p>
-                  Zara Lee’s AI-powered installation captivates audiences at the
-                  Global Digital Arts Forum, raising questions about the fusion
-                  of human intent and machine precision. The work highlights the
-                  limitless potential of AI as a creative partner in the world
-                  of modern art.
+                  Amara Ochieng's upcycled bag collection captivates visitors at
+                  the Nairobi Sustainable Fashion Showcase, raising questions
+                  about the intersection of artisan craftsmanship and
+                  environmental responsibility. The work highlights the
+                  limitless potential of discarded textiles as raw materials in
+                  the world of conscious design.
                 </p>
                 <div className="case-studies-item-inner-link">
                   <Link href="/archive">Discover the Journey</Link>
@@ -322,20 +334,21 @@ export default function Home() {
 
             <div className="case-studies-item case-studies-item-2">
               <div className="container">
-                <h3>The Dawn of AI-Driven Fashion</h3>
-                <p className="primary">[ Visionary Threads — Elena Marquez ]</p>
+                <h3>The Dawn of Circular Fashion</h3>
+                <p className="primary">[ REBORN TEXTILES — ELENA KIMANI ]</p>
                 <div className="case-studies-item-inner-img">
                   <img
-                    src="/images/home/case-study-2.jpeg"
+                    src="/images/home/rebagankara.png"
                     alt="AI-driven fashion design showcase"
                   />
                 </div>
                 <p>
-                  Elena Marquez launches the first fashion magazine curated
-                  entirely by AI, featuring futuristic designs and concepts that
-                  redefine the boundaries of creativity. While widely praised
-                  for its innovation, the magazine ignites debates over the role
-                  of human designers in a machine-led creative process.
+                  Elena Kimani launches the first fashion cooperative powered
+                  entirely by textile waste, featuring innovative designs that
+                  redefine the boundaries of sustainability. While widely
+                  praised for its environmental impact, the initiative ignites
+                  debates over scaling artisan production in a mass-market
+                  industry.
                 </p>
                 <div className="case-studies-item-inner-link">
                   <Link href="/archive">Read Full Story</Link>
@@ -347,22 +360,21 @@ export default function Home() {
             </div>
             <div className="case-studies-item case-studies-item-3">
               <div className="container">
-                <h3>The Rise of AI-Curated Art Awards</h3>
-                <p className="primary">
-                  [ Synthetic Realities — Sophia Armitage ]
-                </p>
+                <h3>The Rise of Community-Powered Design</h3>
+                <p className="primary">[ WASTELESS FUTURES — SOPHIA MWANGI ]</p>
                 <div className="case-studies-item-inner-img">
                   <img
-                    src="/images/home/case-study-3.jpeg"
+                    src="/images/home/landfill.jpg"
                     alt="AI-curated artwork showcase"
                   />
                 </div>
                 <p>
-                  Sophia Armitage’s groundbreaking AI-curated exhibition
-                  highlights the creative potential of machine-generated art.
-                  The event features photorealistic works of entirely fictional
-                  subjects, sparking a discussion about bias, authenticity, and
-                  AI’s role in shaping the future of artistic recognition.
+                  Sophia Mwangi's groundbreaking community workshop highlights
+                  the creative potential of collaborative upcycling. The
+                  initiative features beautifully crafted bags made from donated
+                  clothing, sparking a discussion about economic empowerment,
+                  local manufacturing, and community-driven solutions to global
+                  waste challenges.
                 </p>
                 <div className="case-studies-item-inner-link">
                   <Link href="/archive">Explore the Exhibit</Link>
@@ -375,7 +387,7 @@ export default function Home() {
           </div>
           <div className="case-studies-items-images col">
             <div className="case-studies-img case-studies-img-1">
-              <img src="/images/home/case-study-1.jpeg" alt="" />
+              <img src="/images/home/cuttingbag.png" alt="" />
               <div className="hero-img-overlay"></div>
               <div className="case-studies-img-link">
                 <Link href="/archive">
@@ -387,7 +399,7 @@ export default function Home() {
               </div>
             </div>
             <div className="case-studies-img case-studies-img-2">
-              <img src="/images/home/case-study-2.jpeg" alt="" />
+              <img src="/images/home/warehse.png" alt="" />
               <div className="hero-img-overlay"></div>
               <div className="case-studies-img-link">
                 <Link href="/archive">
@@ -399,7 +411,7 @@ export default function Home() {
               </div>
             </div>
             <div className="case-studies-img case-studies-img-3">
-              <img src="/images/home/case-study-3.jpeg" alt="" />
+              <img src="/images/home/landfill.jpg" alt="" />
               <div className="hero-img-overlay"></div>
               <div className="case-studies-img-link">
                 <Link href="/archive">
@@ -412,7 +424,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
         <section className="abstract-bg">
           <div className="strip"></div>
           <div className="strip"></div>
@@ -423,13 +434,12 @@ export default function Home() {
           <div className="strip"></div>
           <div className="strip"></div>
         </section>
-
         <section className="works" id="works">
           <div className="works-header">
             <div className="container">
               <ShuffleText
                 as="h2"
-                text="Timeless Art Through a New Lens"
+                text="Sustainable Style Through a New Design"
                 triggerOnScroll={true}
               />
             </div>
@@ -442,18 +452,25 @@ export default function Home() {
               </div>
               <div className="col">
                 <div className="works-copy">
-                  <h2>Can machines innovate Like Human Artists?</h2>
+                  <h2>What Happens When Sustainability Becomes Visible?</h2>
                   <p>
-                    These experiments explore the potential of advanced AI
-                    tools, such as Midjourney and DALL-E 3, to reimagine classic
-                    masterpieces through unique and boundary-pushing prompts.
+                    When sustainable choices are no longer hidden behind labels
+                    or corporate reports, they become part of everyday life. A
+                    ReBag turns environmental responsibility into something
+                    people can see, carry, and share in public spaces. Each bag
+                    moves through streets, markets, and malls, replacing
+                    plastic, reducing textile waste, and broadcasting a message
+                    of conscious living. Visibility creates accountability,
+                    sparks conversation, and normalizes better choices—proving
+                    that sustainability has greater impact when it is lived out
+                    loud rather than practiced quietly.
                   </p>
                 </div>
               </div>
             </div>
           </div>
         </section>
-
+        // Inside the carousel section, replace with this:
         <section className="carousel">
           {carouselItems.map((item) => (
             <div
@@ -462,14 +479,14 @@ export default function Home() {
               className="project"
               style={{
                 clipPath:
-                  item.id === "01"
+                  item.id === "Advertise"
                     ? "polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)"
                     : "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)",
               }}
             >
+              <Link href={item.url} className="project-link-overlay" />
               <div className="project-bg">
                 <img src={item.bg} alt="" />
-
                 <div className="hero-img-overlay"></div>
                 <div className="hero-img-gradient"></div>
               </div>
@@ -478,7 +495,7 @@ export default function Home() {
               </div>
               <div className="project-header">
                 <div className="project-id">
-                  <h2>Archive {item.id}</h2>
+                  <h2>{item.id}</h2>
                 </div>
                 <div className="project-whitespace"></div>
                 <div className="project-title">
@@ -487,18 +504,17 @@ export default function Home() {
               </div>
               <div className="project-info">
                 <div className="project-url">
-                  <Link href={item.url}>( The Journey )</Link>
+                  <Link href={item.url}>
+                    <span>
+                      (&nbsp; View Page <MdArrowOutward />
+                      &nbsp;)
+                    </span>
+                  </Link>
                 </div>
               </div>
-              <Link
-                href={item.url}
-                className="project-overlay-link"
-                aria-label={`View ${item.title} project`}
-              />
             </div>
           ))}
         </section>
-
         <Footer />
       </div>
     </ReactLenis>

@@ -5,8 +5,8 @@ import Navbar from "@/components/Navbar/Navbar";
 import "./globals.css";
 
 export const metadata = {
-  title: "ALGORA — Your AI art portal",
-  description: "CGMWT JAN 2025 by Codegrid",
+  title: "REBAG — Carrying Change",
+  description: "JAN 2026 by REBAG",
 };
 
 export default function RootLayout({ children }) {

@@ -13,6 +13,7 @@ const MusicToggle = dynamic(() => import("../MusicToggle/MusicToggle"), {
 
 const Navbar = () => {
   const [time, setTime] = useState("");
+  const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
   const router = useRouter();
   const isHomePage = pathname === "/";
@@ -36,6 +37,7 @@ const Navbar = () => {
 
   const handleNavigation = (event, sectionId) => {
     event.preventDefault();
+    setMenuOpen(false); // Close mobile menu after navigation
 
     if (isHomePage) {
       const lenis = window.lenis;
@@ -54,38 +56,55 @@ const Navbar = () => {
     }
   };
 
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
-    <div className="navbar">
-      <div className="navbar-col">
-        <div className="navbar-sub-col logo">
-          <Link href="/">
-            <h3>Algora</h3>
-          </Link>
+    <nav className="navbar">
+      <div className="navbar-container">
+        <div className="navbar-col navbar-left">
+          <div className="navbar-sub-col logo">
+            <Link href="/">
+              <h3>Rebag</h3>
+            </Link>
+          </div>
+          <div className="navbar-sub-col time">
+            <p>{time}</p>
+          </div>
         </div>
-        <div className="navbar-sub-col time">
-          <p>{time}</p>
+
+        <button 
+          className={`mobile-menu-toggle ${menuOpen ? 'active' : ''}`}
+          onClick={toggleMenu}
+          aria-label="Toggle menu"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <div className={`navbar-col navbar-right ${menuOpen ? 'mobile-open' : ''}`}>
+          <div className="navbar-sub-col nav-items">
+            <a href="#intro" onClick={(e) => handleNavigation(e, "intro")}>
+              Partnerships
+            </a>
+            <a
+              href="#case-studies"
+              onClick={(e) => handleNavigation(e, "case-studies")}
+            >
+              Clients
+            </a>
+            <a href="#works" onClick={(e) => handleNavigation(e, "works")}>
+              Designs
+            </a>
+          </div>
+          <div className="navbar-sub-col music-toggle-wrapper">
+            <MusicToggle />
+          </div>
         </div>
       </div>
-      <div className="navbar-col">
-        <div className="navbar-sub-col nav-items">
-          <a href="#intro" onClick={(e) => handleNavigation(e, "intro")}>
-            <p>The Origins</p>
-          </a>
-          <a
-            href="#case-studies"
-            onClick={(e) => handleNavigation(e, "case-studies")}
-          >
-            <p>Highlights</p>
-          </a>
-          <a href="#works" onClick={(e) => handleNavigation(e, "works")}>
-            <p>Innovations</p>
-          </a>
-        </div>
-        <div className="navbar-sub-col music-toggle-wrapper">
-          <MusicToggle />
-        </div>
-      </div>
-    </div>
+    </nav>
   );
 };
 

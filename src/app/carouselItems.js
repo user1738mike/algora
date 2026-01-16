@@ -1,23 +1,23 @@
 export const carouselItems = [
   {
-    id: "101",
-    title: "Starlight Reverie Celestial",
-    bg: "/images/carousel/carousel1.jpeg",
-    main: "/images/carousel/carousel1.jpeg",
-    url: "/archive",
+    id: "Advertise",
+    title: "Advertisers Page",
+    bg: "/images/carousel/rebagonwall.png",
+    main: "/images/carousel/rebagonwall.png",
+    url: "/advertise", // This will navigate to the advertisers/archive page
   },
   {
-    id: "102",
-    title: "The Infinite Eternity Flow",
-    bg: "/images/carousel/carousel2.jpeg",
-    main: "/images/carousel/carousel2.jpeg",
-    url: "/archive",
+    id: "Distributors", // Fixed typo from "Disrtributers"
+    title: "Distributors Page", // Fixed typo
+    bg: "/images/carousel/handmade.jfif",
+    main: "/images/carousel/handmade.jfif",
+    url: "/distribute", // Fixed route name to match
   },
   {
-    id: "103",
-    title: "Aurora's Horizon Colors",
-    bg: "/images/carousel/carousel3.jpeg",
-    main: "/images/carousel/carousel3.jpeg",
-    url: "/archive",
+    id: "Retailers",
+    title: "Retailers Page",
+    bg: "/images/carousel/han.jpeg",
+    main: "/images/carousel/han.jpeg",
+    url: "/retail", // This will navigate to the retail page
   },
 ];
