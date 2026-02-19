@@ -338,7 +338,7 @@ export default function Home() {
                 <p className="primary">[ REBORN TEXTILES — ELENA KIMANI ]</p>
                 <div className="case-studies-item-inner-img">
                   <img
-                    src="/images/home/rebagankara.png"
+                    src="/images/home/denimankara.jfif"
                     alt="AI-driven fashion design showcase"
                   />
                 </div>

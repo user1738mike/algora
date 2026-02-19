@@ -1,8 +1,26 @@
-/* Hero Section - Fully Responsive */
+/* =========================
+   GLOBAL THEME OVERRIDES
+   ========================= */
+:root {
+  --primary: #83f286;
+}
+
+/* Remove ALL image overlay/shadow effects across the page */
+.hero-img-gradient,
+.hero-img-overlay {
+  display: none !important;
+}
+
+/* =========================
+   HERO
+   ========================= */
 .hero {
   width: 100vw;
   height: 100svh;
   overflow: hidden;
+  display: flex;
+  align-items: flex-end; /* desktop: bottom aligned */
+  position: relative;
 }
 
 .hero-img {
@@ -19,54 +37,26 @@
   object-fit: cover;
 }
 
-.hero-img-gradient {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(0deg, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0) 100%);
-}
-
-.hero-img-overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: linear-gradient(
-    rgb(255 255 255 / 0.075),
-    rgb(255 255 255 / 0.075) 4px,
-    transparent 4px,
-    transparent 9px
-  );
-  background-size: 100% 9px;
-  animation: pan-overlay 22s infinite linear;
-}
-
-@keyframes pan-overlay {
-  from {
-    background-position: 0% 0%;
-  }
-  to {
-    background-position: 0% -100%;
-  }
-}
-
-.hero {
-  display: flex;
-  align-items: flex-end;
-}
+/* kept for reference but disabled above
+.hero-img-gradient { ... }
+.hero-img-overlay  { ... }
+*/
 
 .hero .container {
   padding: clamp(2rem, 5vw, 4rem);
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
+
+  /* make hero content fill viewport for reliable vertical layout */
+  height: 100%;
+  display: flex;
+  align-items: flex-end; /* desktop bottom */
 }
 
 .hero .hero-copy {
   width: 100%;
+  height: 100%;
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
@@ -77,11 +67,18 @@
   width: 75%;
 }
 
-.hero-copy-col:nth-child(1) h3 {
-  position: relative;
-  margin-left: 0.5rem;
-  font-size: clamp(2.2rem, 6vw, 3rem);
-  line-height: 1.1;
+/* Hero title (wrap ShuffleText in <div class="hero-title"> ... ) */
+.hero-title,
+.hero-title h1 {
+  font-size: clamp(1.9rem, 6.2vw, 4.8rem);
+  line-height: 1.05;
+  letter-spacing: -0.04em;
+  margin: 0;
+}
+
+/* If ShuffleText uses spans internally */
+.hero-title span {
+  font: inherit;
 }
 
 .hero-icon {
@@ -120,7 +117,7 @@
   transform: translateY(-50%);
   width: 8px;
   height: 8px;
-  background-color: #4ade80;
+  background-color: var(--primary);
   border-radius: 50%;
 }
 
@@ -143,12 +140,12 @@
 }
 
 .hero-cta-primary {
-  background-color: #4ade80;
-  color: var(--background);
+  background-color: var(--primary);
+  color: #000; /* better contrast for this lighter green */
 }
 
 .hero-cta-primary:hover {
-  opacity: 0.9;
+  opacity: 0.92;
   transform: translateY(-2px);
 }
 
@@ -163,7 +160,9 @@
   color: var(--background);
 }
 
-/* Intro Section - Responsive */
+/* =========================
+   INTRO
+   ========================= */
 .intro {
   position: relative;
   background-color: var(--background);
@@ -241,7 +240,9 @@
   );
 }
 
-/* Case Studies - Responsive */
+/* =========================
+   CASE STUDIES
+   ========================= */
 .case-studies {
   position: relative;
   width: 100%;
@@ -280,7 +281,9 @@
   width: 70%;
 }
 
-/* Case Studies Items - Responsive */
+/* =========================
+   CASE STUDIES ITEMS
+   ========================= */
 .case-studies-items {
   position: relative;
   width: 100%;
@@ -354,7 +357,9 @@
   display: none;
 }
 
-/* Carousel - Responsive */
+/* =========================
+   CAROUSEL
+   ========================= */
 .carousel {
   position: relative;
   width: 100vw;
@@ -427,24 +432,34 @@
   text-align: center;
 }
 
-/* Tablet and Mobile Responsive */
+/* =========================
+   TABLET / MOBILE
+   ========================= */
 @media (max-width: 900px) {
   .hero .container {
     padding: 3em 1.5rem;
-  }
 
-   :root {
-    font-size: 130%; /* 30% bigger on mobile */
-  }
-
-  .hero-copy-col:nth-child(1) {
-    width: 100%;
+    /* lower hero text into viewport */
+    align-items: flex-start;
+    padding-top: 22svh;
+    padding-bottom: 10svh;
   }
 
   .hero .hero-copy {
     flex-direction: column-reverse;
     align-items: flex-start;
     gap: 2em;
+  }
+
+  .hero-copy-col:nth-child(1) {
+    width: 100%;
+  }
+
+  /* smaller title on mobile */
+  .hero-title,
+  .hero-title h1 {
+    font-size: clamp(1.7rem, 7.2vw, 3.1rem);
+    line-height: 1.1;
   }
 
   .hero-value-props {
@@ -564,10 +579,15 @@
   }
 }
 
-/* Small Mobile */
+/* =========================
+   SMALL MOBILE
+   ========================= */
 @media (max-width: 600px) {
   .hero .container {
     padding: 2.25em 1.25rem;
+
+    /* slightly lower on very small screens */
+    padding-top: 26svh;
   }
 
   .intro .intro-container {
@@ -595,5 +615,11 @@
   .hero-value-props {
     gap: 0.5rem;
     margin: 1.25rem 0;
+  }
+
+  /* smallest heading clamp */
+  .hero-title,
+  .hero-title h1 {
+    font-size: clamp(1.55rem, 8vw, 2.7rem);
   }
 }

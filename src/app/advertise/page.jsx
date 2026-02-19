@@ -20,43 +20,43 @@ const ArchivePage = () => {
   const products = [
     {
       id: "BAG-001",
-      image: "/images/carousel/bag1.png",
+      image: "/images/home/shopp.jpeg",
       name: "Classic Tote",
       specs: "Size: 15x12x5 inches | Material: Recycled Canvas",
     },
     {
       id: "BAG-002",
-      image: "/images/carousel/bag2.png",
+      image: "/images/home/greypouch.png",
       name: "Premium Shopper",
       specs: "Size: 18x14x6 inches | Material: Upcycled Denim",
     },
     {
       id: "BAG-003",
-      image: "/images/carousel/bag3.png",
+      image: "/images/home/puffy.jpeg",
       name: "Urban Carry",
       specs: "Size: 16x13x5 inches | Material: Recycled Polyester",
     },
     {
       id: "BAG-004",
-      image: "/images/carousel/rebagonwall.png",
+      image: "/images/home/puff.jpeg",
       name: "Eco Messenger",
       specs: "Size: 14x11x4 inches | Material: Denim Blend",
     },
     {
       id: "BAG-005",
-      image: "/images/carousel/bag4.png",
+      image: "/images/home/floral.png",
       name: "Artisan Satchel",
       specs: "Size: 13x10x6 inches | Material: Recycled Leather",
     },
     {
       id: "BAG-006",
-      image: "/images/carousel/bag5.png",
+      image: "/images/home/floral2.png",
       name: "Market Basket",
       specs: "Size: 17x15x7 inches | Material: Woven Recycled Fabric",
     },
     {
       id: "BAG-007",
-      image: "/images/carousel/bag6.png",
+      image: "/images/home/pouche.png",
       name: "Compact Pouch",
       specs: "Size: 12x9x3 inches | Material: Upcycled Cotton",
     },
@@ -68,7 +68,7 @@ const ArchivePage = () => {
     },
     {
       id: "BAG-009",
-      image: "/images/carousel/bag8.png",
+      image: "/images/home/yello.png",
       name: "Daily Commuter",
       specs: "Size: 15x11x5 inches | Material: Eco-Friendly Nylon",
     },
@@ -80,7 +80,7 @@ const ArchivePage = () => {
     },
     {
       id: "BAG-011",
-      image: "/images/carousel/handmade.jfif",
+      image: "/images/home/circle.png",
       name: "Express Tote",
       specs: "Size: 16x14x6 inches | Material: Biodegradable Blend",
     },
