@@ -470,7 +470,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        // Inside the carousel section, replace with this:
+        
         <section className="carousel">
           {carouselItems.map((item) => (
             <div
