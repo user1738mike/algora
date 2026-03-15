@@ -318,12 +318,6 @@ export default function Home() {
                   them daily, and advertisers gain constant visibility across
                   the city.
                 </p>
-                <div className="case-studies-item-inner-link">
-                  <Link href="/archive">Discover the Journey</Link>
-                  <div className="link-icon">
-                    <MdArrowOutward size={24} />
-                  </div>
-                </div>
               </div>
             </div>
 
@@ -346,12 +340,6 @@ export default function Home() {
                   cities. The result is a circular system where sustainability,
                   business growth, and urban visibility work together.
                 </p>
-                <div className="case-studies-item-inner-link">
-                  <Link href="/archive">Read Full Story</Link>
-                  <div className="link-icon">
-                    <MdArrowOutward size={24} />
-                  </div>
-                </div>
               </div>
             </div>
             <div className="case-studies-item case-studies-item-3">
@@ -374,12 +362,6 @@ export default function Home() {
                   the model attractive to investors, sustainability programs,
                   and brand partners.
                 </p>
-                <div className="case-studies-item-inner-link">
-                  <Link href="/archive">Explore the Exhibit</Link>
-                  <div className="link-icon">
-                    <MdArrowOutward size={24} />
-                  </div>
-                </div>
               </div>
             </div>
           </div>

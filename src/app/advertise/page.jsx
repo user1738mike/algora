@@ -511,7 +511,7 @@ const heroImages = [
   "/images/home/floral.png",
   "/images/home/newbag10.jpeg",
   "/images/home/pouche.png",
-  "/images/home/patchwork.jfif",
+  "/images/home/newbag10.jpeg",
 ];
 
 const colorOptions = [
