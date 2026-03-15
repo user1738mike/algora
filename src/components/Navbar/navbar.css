@@ -15,7 +15,7 @@
 .navbar.scrolled {
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  background: rgba(0, 0, 0, 0.75); /* BLACK glass */
+  background: rgba(190, 174, 174, 0.75); /* BLACK glass */
   border-bottom: 1px solid rgba(255, 255, 255, 0.08);
 }
 
@@ -58,7 +58,7 @@
 .navbar.scrolled .navbar-right {
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
-  background: rgba(0, 0, 0, 0.6); /* BLACK background */
+  background: rgba(190, 174, 174, 0.75);
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 14px;
   padding: 0.55rem 0.9rem;
@@ -73,8 +73,8 @@
 
 .nav-items a {
   text-decoration: none;
-  color: #ffffff;
-  font-size: 0.95rem;
+  color: #1e6f24;
+  font-size: 1.45rem;
   font-weight: 500;
   transition: opacity 0.2s ease;
 }

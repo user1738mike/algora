@@ -1,4 +1,3 @@
-// Footer.jsx
 "use client";
 
 import Link from "next/link";
@@ -9,83 +8,67 @@ export default function Footer() {
     <footer className="site-footer" role="contentinfo">
       <div className="footer-inner">
         <div className="footer-top">
-          <div className="footer-brand">
-            <Link href="/" className="footer-logo" aria-label="Rebag home">
-              Rebag
-            </Link>
-            <p className="footer-tagline">
-              Premium bags. Curated drops. Trusted resale.
-            </p>
+          <div className="footer-brand-block">
+            <div className="footer-newsletter">
+              <p className="footer-eyebrow">Newsletter</p>
+              <h2 className="footer-heading">
+                Explore our wide catalogue and choose the products that fit your
+                business.
+              </h2>
+            </div>
           </div>
 
           <nav className="footer-nav" aria-label="Footer">
             <div className="footer-col">
               <p className="footer-col-title">Shop</p>
-              <Link href="/shop" className="footer-link">
+              <Link href="/advertise" className="footer-link">
                 All Products
-              </Link>
-              <Link href="/new" className="footer-link">
-                New In
-              </Link>
-              <Link href="/brands" className="footer-link">
-                Brands
-              </Link>
-              <Link href="/sell" className="footer-link">
-                Sell to Rebag
               </Link>
             </div>
 
             <div className="footer-col">
               <p className="footer-col-title">Company</p>
               <Link href="/about" className="footer-link">
-                About
-              </Link>
-              <Link href="/blog" className="footer-link">
-                Blog
-              </Link>
-              <Link href="/careers" className="footer-link">
-                Careers
+                About <span className="coming-soon">(Coming Soon)</span>
               </Link>
               <Link href="/contact" className="footer-link">
-                Contact
+                Contact <span className="coming-soon">(Coming Soon)</span>
               </Link>
             </div>
 
             <div className="footer-col">
               <p className="footer-col-title">Support</p>
               <Link href="/faq" className="footer-link">
-                FAQ
+                FAQ <span className="coming-soon">(Coming Soon)</span>
               </Link>
               <Link href="/shipping" className="footer-link">
-                Shipping & Returns
+                Shipping & Returns{" "}
+                <span className="coming-soon">(Coming Soon)</span>
               </Link>
               <Link href="/privacy" className="footer-link">
-                Privacy Policy
+                Privacy Policy{" "}
+                <span className="coming-soon">(Coming Soon)</span>
               </Link>
               <Link href="/terms" className="footer-link">
-                Terms
+                Terms <span className="coming-soon">(Coming Soon)</span>
               </Link>
             </div>
           </nav>
         </div>
-
-        <div className="footer-divider" />
-
+        <div className="footer-bottom-right">
+          <Link href="/" aria-label="Rebag home">
+            <img
+              src="/rebaglogo.png"
+              alt="Rebag logo"
+              className="footer-logo-image"
+            />
+          </Link>
+        </div>
         <div className="footer-bottom">
-          <p className="footer-copy">
-            © {new Date().getFullYear()} Rebag. All rights reserved.
-          </p>
-
-          <div className="footer-bottom-links">
-            <Link href="/privacy" className="footer-mini-link">
-              Privacy
-            </Link>
-            <Link href="/terms" className="footer-mini-link">
-              Terms
-            </Link>
-            <Link href="/cookies" className="footer-mini-link">
-              Cookies
-            </Link>
+          <div className="footer-bottom-left">
+            <p className="footer-copy">
+              © {new Date().getFullYear()} Rebag. All rights reserved.
+            </p>
           </div>
         </div>
       </div>

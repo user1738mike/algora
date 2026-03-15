@@ -5,19 +5,18 @@ import gsap from "gsap";
 import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { ReactLenis } from "@studio-freight/react-lenis";
-import Marquee from "@/components/Marquee/Marquee";
-import Footer from "@/components/Footer/Footer";
-import ShuffleText from "@/components/ShuffleText/ShuffleText";
+import Marquee from "../../components/Marquee/Marquee";
+import Footer from "../../components/Footer/Footer";
+import ShuffleText from "../../components/ShuffleText/ShuffleText";
 
 import "./retail.css";
 
 gsap.registerPlugin(useGSAP);
 gsap.registerPlugin(ScrollTrigger);
 
-const RetailPage = () => {
+const ArchivePage = () => {
   const container = useRef();
 
-  // controls pinning of the source section
   useGSAP(
     () => {
       let pinAnimation;
@@ -55,7 +54,7 @@ const RetailPage = () => {
         window.removeEventListener("resize", handleResize);
       };
     },
-    { scope: container }
+    { scope: container },
   );
 
   return (
@@ -65,7 +64,7 @@ const RetailPage = () => {
           <div className="container">
             <ShuffleText
               as="h1"
-              text="Retail Partners: Where Style Meets Sustainability"
+              text="Sustainable Bags That Attract Customers"
             />
             <div className="archive-hero-img-wrapper">
               <div className="archive-hero-img-wrapper-row">
@@ -75,10 +74,7 @@ const RetailPage = () => {
               </div>
               <div className="archive-hero-img-wrapper-row">
                 <div className="archive-hero-img">
-                  <img
-                    src="https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&q=80"
-                    alt="Retail store"
-                  />
+                  <img src="/images/home/collectin.jpeg" alt="" />
                 </div>
               </div>
               <div className="archive-hero-img-wrapper-row">
@@ -94,14 +90,18 @@ const RetailPage = () => {
           <div className="archive-col source">
             <div className="container">
               <div className="source-img">
-                <img
-                  src="https://images.unsplash.com/photo-1607082348824-0a96f2a4b9da?w=600&q=80"
-                  alt="Shopping bags display"
-                />
+                <img src="/images/home/marketrebag.png" alt="" />
               </div>
               <div className="source-content">
-                <p className="primary">[ Our Vision ]</p>
-                <h4>Every checkout, a sustainable choice</h4>
+                <p className="primary">
+                  Built for Retail Shelves. Designed for Market Scale.
+                </p>
+                <p>
+                  Offer your customers more than a reusable bag. Re-BagAfrica
+                  products combine everyday function, sustainability, and strong
+                  design, helping retailers stock products with real purpose and
+                  visible customer appeal.
+                </p>
               </div>
             </div>
           </div>
@@ -109,30 +109,38 @@ const RetailPage = () => {
             <div className="container">
               <div className="gallery-copy">
                 <p className="primary">
-                  // RETAIL EXPERIENCE: Partner stores offering our eco-friendly
-                  bags as a free alternative to single-use plastic at checkout.
+                  Retailers distribute Re-BagAfrica bags at checkout or through
+                  promotional campaigns.
                 </p>
-                <p className="secondary">[ Partner Locations ]</p>
-                <h4>Featured Retail Partners</h4>
+                <p className="secondary">[ This provides several benefits: ]</p>
+                <ul className="gallery-list">
+                  <li>
+                    Retailers offer reusable eco-friendly shopping bags that
+                    support sustainability goals.
+                  </li>
+                  <li>
+                    Customers receive practical bags they use repeatedly,
+                    increasing brand exposure.
+                  </li>
+                  <li>
+                    QR campaigns drive traffic back to stores through promotions
+                    and discounts.
+                  </li>
+                  <li>
+                    Retail locations become key distribution points for the
+                    Re-BagAfrica network.
+                  </li>
+                </ul>
                 <div className="gallery-images-container">
                   <div className="gallery-row main-img">
-                    <img
-                      src="https://images.unsplash.com/photo-1555421689-491a97ff2040?w=800&q=80"
-                      alt="Modern retail space"
-                    />
+                    <img src="/images/home/newbag5.jpeg" alt="" />
                   </div>
                   <div className="gallery-row sub-images">
                     <div className="sub-images-col">
-                      <img
-                        src="https://images.unsplash.com/photo-1564584217132-2271feaeb3c5?w=400&q=80"
-                        alt="Boutique interior"
-                      />
+                      <img src="/images/home/newbag6.jpeg" alt="" />
                     </div>
                     <div className="sub-images-col">
-                      <img
-                        src="https://images.unsplash.com/photo-1567401893414-76b7b1e5a7a5?w=400&q=80"
-                        alt="Store checkout"
-                      />
+                      <img src="/images/home/newbag7.jpeg" alt="" />
                     </div>
                   </div>
                 </div>
@@ -147,14 +155,19 @@ const RetailPage = () => {
             <Marquee />
           </div>
           <div className="container">
-            <p className="primary">[ Customer Stories ]</p>
+            <p className="primary">
+              Stock Sustainable Products Your Customers Will Actually Use
+            </p>
             <div className="next-archive-img">
-              <img
-                src="https://images.unsplash.com/photo-1483985988355-763728e1935b?w=800&q=80"
-                alt="Happy shoppers"
-              />
+              <img src="/images/home/newbag8.jpeg" alt="" />
             </div>
-            <h2>Voices of Change</h2>
+            <p>
+              Re-BagAfrica helps retailers offer products that combine everyday
+              utility, sustainability, and brand storytelling. Our bags are
+              designed to fit naturally into modern retail environments where
+              customers are increasingly looking for practical products with
+              visible environmental value.
+            </p>
           </div>
         </section>
 
@@ -164,4 +177,4 @@ const RetailPage = () => {
   );
 };
 
-export default RetailPage;
+export default ArchivePage;

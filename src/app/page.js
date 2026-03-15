@@ -7,10 +7,10 @@ import { useGSAP } from "@gsap/react";
 import ScrollTrigger from "gsap/ScrollTrigger";
 import { ReactLenis, useLenis } from "@studio-freight/react-lenis";
 import { MdArrowOutward } from "react-icons/md";
-import Marquee from "@/components/Marquee/Marquee";
-import Footer from "@/components/Footer/Footer";
-import ShuffleText from "@/components/ShuffleText/ShuffleText";
-import GeometricBackground from "@/components/GeometricBackground/GeometricBackground";
+import Marquee from "../components/Marquee/Marquee.jsx";
+import Footer from "../components/Footer/Footer.jsx";
+import ShuffleText from "../components/ShuffleText/ShuffleText.jsx";
+import GeometricBackground from "../components/GeometricBackground/GeometricBackground.jsx";
 import { carouselItems } from "./carouselItems";
 
 import "./home.css";
@@ -60,7 +60,7 @@ export default function Home() {
         ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
       };
     },
-    { scope: container }
+    { scope: container },
   );
 
   // handles case studies image pinning and scale animations on scroll
@@ -102,7 +102,7 @@ export default function Home() {
         ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
       };
     },
-    { scope: container }
+    { scope: container },
   );
 
   // handles carousel slide transitions with clip-path animations
@@ -133,7 +133,7 @@ export default function Home() {
             const nextSlideProgress = gsap.utils.interpolate(
               "polygon(0% 100%, 100% 100%, 100% 100%, 0% 100%)",
               "polygon(0% 100%, 100% 100%, 100% 0%, 0% 0%)",
-              slideProgress
+              slideProgress,
             );
 
             gsap.set(projects[currentSlide + 1], {
@@ -163,7 +163,7 @@ export default function Home() {
         ScrollTrigger.getAll().forEach((trigger) => trigger.kill());
       };
     },
-    { scope: container }
+    { scope: container },
   );
 
   return (
@@ -218,27 +218,21 @@ export default function Home() {
               <div className="col">
                 <div className="intro-copy">
                   <p>
-                    Rebag has revolutionized textile waste, transforming
-                    discarded clothing destined for landfills into beautiful,
-                    handcrafted bags that prove sustainability and style are not
-                    mutually exclusive.
+                    At Re-BagAfrica, we believe sustainability should be
+                    accessible, practical, and beneficial for everyone. That’s
+                    why we’ve introduced the Sponsored Sustainability Model—an
+                    innovative approach where advertisers fund the production of
+                    reusable bags, we manufacture them, and supermarkets
+                    distribute them to customers at no cost. This model
+                    transforms eco-friendly shopping into a win-win partnership:
+                    advertisers gain meaningful brand visibility, supermarkets
+                    strengthen their sustainability credentials, and communities
+                    receive durable, reusable bags that reduce plastic waste. By
+                    aligning environmental responsibility with smart business
+                    strategy, we’re creating a future where sustainability is
+                    not just a choice, but the standard.
                   </p>
-                  <p>
-                    Behind every bag is a skilled artisan building a sustainable
-                    livelihood. We train individuals from underserved
-                    communities in textile upcycling, pattern making, and
-                    responsible production, providing stable income and
-                    transferable skills. Donated clothes become the raw material
-                    for this work, while our revenue model ensures long-term
-                    impact: business partners distribute our bags at scale, and
-                    mission-aligned advertisers fund production by using each
-                    bag as a mobile billboard. Purchases and partnerships
-                    directly finance job training and fair wages. This is not
-                    charity; it is a circular economy that creates value for
-                    donors, dignified work for artisans, visibility for partners
-                    and advertisers, and a durable product carried by customers
-                    as a visible statement of positive change.
-                  </p>
+                  <p></p>
                 </div>
                 <div className="prompt-example">
                   <div className="prompt-example-header">
@@ -307,7 +301,7 @@ export default function Home() {
               <div className="container">
                 <h3>Craftsmanship in the Age of Waste</h3>
                 <p className="primary">
-                  [ THREADS OF RENEWAL — AMARA OCHIENG ]
+                  [ TURN EVERYDAY BAGS INTO MOVING ADVERTISEMENTS]
                 </p>
                 <div className="case-studies-item-inner-img">
                   <img
@@ -316,12 +310,13 @@ export default function Home() {
                   />
                 </div>
                 <p>
-                  Amara Ochieng's upcycled bag collection captivates visitors at
-                  the Nairobi Sustainable Fashion Showcase, raising questions
-                  about the intersection of artisan craftsmanship and
-                  environmental responsibility. The work highlights the
-                  limitless potential of discarded textiles as raw materials in
-                  the world of conscious design.
+                  Re-BagAfrica transforms recycled textiles into durable
+                  shopping bags that double as mobile advertising platforms.
+                  Instead of a static billboard on one road, your brand travels
+                  through streets, buses, markets, and malls carried by real
+                  people every day. Retailers distribute the bags, customers use
+                  them daily, and advertisers gain constant visibility across
+                  the city.
                 </p>
                 <div className="case-studies-item-inner-link">
                   <Link href="/archive">Discover the Journey</Link>
@@ -334,21 +329,22 @@ export default function Home() {
 
             <div className="case-studies-item case-studies-item-2">
               <div className="container">
-                <h3>The Dawn of Circular Fashion</h3>
-                <p className="primary">[ REBORN TEXTILES — ELENA KIMANI ]</p>
+                <h3>Core Brand Message</h3>
+                <p className="primary">
+                  [ CARRY THE MESSAGE.CARRY THE CHANGE. ]
+                </p>
                 <div className="case-studies-item-inner-img">
                   <img
-                    src="/images/home/denimankara.jfif"
+                    src="/images/home/cuttingbag.png"
                     alt="AI-driven fashion design showcase"
                   />
                 </div>
                 <p>
-                  Elena Kimani launches the first fashion cooperative powered
-                  entirely by textile waste, featuring innovative designs that
-                  redefine the boundaries of sustainability. While widely
-                  praised for its environmental impact, the initiative ignites
-                  debates over scaling artisan production in a mass-market
-                  industry.
+                  Re-BagAfrica converts textile waste into durable bags that
+                  function as moving advertising platforms. Retailers distribute
+                  them. Customers use them every day. Brands travel across
+                  cities. The result is a circular system where sustainability,
+                  business growth, and urban visibility work together.
                 </p>
                 <div className="case-studies-item-inner-link">
                   <Link href="/archive">Read Full Story</Link>
@@ -360,21 +356,23 @@ export default function Home() {
             </div>
             <div className="case-studies-item case-studies-item-3">
               <div className="container">
-                <h3>The Rise of Community-Powered Design</h3>
-                <p className="primary">[ WASTELESS FUTURES — SOPHIA MWANGI ]</p>
+                <h3>Why the Model Works</h3>
+                <p className="primary">[ ADVERTISING FUNDS SUSTAINABILITY ]</p>
                 <div className="case-studies-item-inner-img">
                   <img
-                    src="/images/home/landfill.jpg"
+                    src="/images/home/puffy.jpeg"
                     alt="AI-curated artwork showcase"
                   />
                 </div>
                 <p>
-                  Sophia Mwangi's groundbreaking community workshop highlights
-                  the creative potential of collaborative upcycling. The
-                  initiative features beautifully crafted bags made from donated
-                  clothing, sparking a discussion about economic empowerment,
-                  local manufacturing, and community-driven solutions to global
-                  waste challenges.
+                  Because the bags are made from recycled textiles, raw material
+                  costs remain very low. Most of the economic value comes from
+                  branding, sponsorships, and advertising campaigns. This means:
+                  Advertising pays for circular production. Circular products
+                  become financially self-sustaining. Environmental impact and
+                  business growth reinforce each other. This combination makes
+                  the model attractive to investors, sustainability programs,
+                  and brand partners.
                 </p>
                 <div className="case-studies-item-inner-link">
                   <Link href="/archive">Explore the Exhibit</Link>
@@ -435,21 +433,8 @@ export default function Home() {
           <div className="strip"></div>
         </section>
         <section className="works" id="works">
-          <div className="works-header">
-            <div className="container">
-              <ShuffleText
-                as="h2"
-                text="Sustainable Style Through a New Design"
-                triggerOnScroll={true}
-              />
-            </div>
-          </div>
-
           <div className="works-content">
             <div className="container">
-              <div className="col">
-                <p className="primary">[ Creative Explorations ]</p>
-              </div>
               <div className="col">
                 <div className="works-copy">
                   <h2>What Happens When Sustainability Becomes Visible?</h2>
@@ -470,7 +455,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        
+
         <section className="carousel">
           {carouselItems.map((item) => (
             <div
