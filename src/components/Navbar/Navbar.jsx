@@ -54,7 +54,7 @@ export default function Navbar() {
               Home
             </Link>
             <Link href="/advertise" onClick={() => setMenuOpen(false)}>
-              Advertise
+              shop
             </Link>
             <Link href="/distribute" onClick={() => setMenuOpen(false)}>
               Distribute
