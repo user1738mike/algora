@@ -1,65 +1,14 @@
 "use client";
 
-import { useEffect, useRef } from "react";
-import gsap from "gsap";
-import { useGSAP } from "@gsap/react";
-import ScrollTrigger from "gsap/ScrollTrigger";
-import { ReactLenis } from "@studio-freight/react-lenis";
 import Marquee from "../../components/Marquee/Marquee";
 import Footer from "../../components/Footer/Footer";
 import ShuffleText from "../../components/ShuffleText/ShuffleText";
 
 import "./distribute.css";
 
-gsap.registerPlugin(useGSAP);
-gsap.registerPlugin(ScrollTrigger);
-
 const ArchivePage = () => {
-  const container = useRef();
-
-  useGSAP(
-    () => {
-      let pinAnimation;
-
-      const initPinning = () => {
-        if (pinAnimation) {
-          pinAnimation.kill();
-        }
-
-        if (window.innerWidth > 900) {
-          pinAnimation = ScrollTrigger.create({
-            trigger: ".sticky-archive",
-            start: "top top",
-            endTrigger: ".gallery",
-            end: "bottom bottom",
-            pin: ".source",
-            pinSpacing: false,
-            invalidateOnRefresh: true,
-          });
-        }
-      };
-
-      initPinning();
-
-      const handleResize = () => {
-        initPinning();
-      };
-
-      window.addEventListener("resize", handleResize);
-
-      return () => {
-        if (pinAnimation) {
-          pinAnimation.kill();
-        }
-        window.removeEventListener("resize", handleResize);
-      };
-    },
-    { scope: container },
-  );
-
   return (
-    <ReactLenis root>
-      <div className="archive" ref={container}>
+      <div className="archive">
         <section className="archive-hero">
           <div className="container">
             <ShuffleText as="h1" text="Scalable Distribution Across Kenya" />
@@ -71,7 +20,7 @@ const ArchivePage = () => {
               </div>
               <div className="archive-hero-img-wrapper-row">
                 <div className="archive-hero-img">
-                  <img src="/images/carousel/wbag.jpg" alt="" fetchPriority="high" decoding="async" />
+                  <img src="/images/home/store.jpg" alt="" fetchPriority="high" decoding="async" />
                 </div>
               </div>
               <div className="archive-hero-img-wrapper-row">
@@ -87,7 +36,7 @@ const ArchivePage = () => {
           <div className="archive-col source">
             <div className="container">
               <div className="source-img">
-                <img src="/images/carousel/rebagonwall.png" alt="" loading="lazy" decoding="async" />
+                <img src="/images/home/rebagsupermarket.png" alt="" loading="lazy" decoding="async" />
               </div>
               <div className="source-content">
                 <p className="primary">
@@ -119,14 +68,14 @@ const ArchivePage = () => {
                 </ul>
                 <div className="gallery-images-container">
                   {/* <div className="gallery-row main-img">
-                    <img src="/images/carousel/bag3.png" alt="" loading="lazy" decoding="async" />
+                    <img src="/images/home/newbag3.jpeg" alt="" loading="lazy" decoding="async" />
                   </div> */}
                   <div className="gallery-row sub-images">
                     <div className="sub-images-col">
-                      <img src="/images/carousel/bag4.png" alt="" loading="lazy" decoding="async" />
+                      <img src="/images/home/newbag4.jpeg" alt="" loading="lazy" decoding="async" />
                     </div>
                     <div className="sub-images-col">
-                      <img src="/images/carousel/bag5.png" alt="" loading="lazy" decoding="async" />
+                      <img src="/images/home/newbag5.jpeg" alt="" loading="lazy" decoding="async" />
                     </div>
                   </div>
                 </div>
@@ -145,7 +94,7 @@ const ArchivePage = () => {
               [ A Better Alternative to Standard Reusable Bags ]
             </p>
             <div className="next-archive-img">
-              <img src="/images/carousel/bag8.png" alt="" loading="lazy" decoding="async" />
+              <img src="/images/home/newbag8.jpeg" alt="" loading="lazy" decoding="async" />
             </div>
 
             <p>
@@ -163,7 +112,6 @@ const ArchivePage = () => {
 
         <Footer />
       </div>
-    </ReactLenis>
   );
 };
 

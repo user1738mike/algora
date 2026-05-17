@@ -78,6 +78,8 @@
 
 .source {
   height: 100vh;
+  position: sticky;
+  top: 0;
   will-change: transform;
   transform: translateZ(0);
   backface-visibility: hidden;
@@ -356,6 +358,8 @@
   .source {
     height: auto;
     min-height: unset;
+    position: relative;
+    top: auto;
   }
 
   .source .container,

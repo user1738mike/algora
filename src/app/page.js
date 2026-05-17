@@ -183,7 +183,7 @@ export default function Home() {
         <section className="hero">
           <div className="hero-img">
             <img
-              src="/images/carousel/wbag.jpg"
+              src="/images/home/pexels-arinda-gracious-742222390-28536810.jpg"
               alt=""
               fetchPriority="high"
               decoding="async"
@@ -246,7 +246,7 @@ export default function Home() {
                   <div className="prompt-example-results">
                     <div className="prompt-example-result-item">
                       <div className="prompt-example-result-item-img">
-                        <img src="/images/carousel/handmade.jfif" alt="" loading="lazy" decoding="async" />
+                        <img src="/images/home/sewing.jpg" alt="" loading="lazy" decoding="async" />
                         <div className="hero-img-overlay"></div>
                       </div>
                       <div className="prompt-example-result-item-title">
@@ -255,7 +255,7 @@ export default function Home() {
                     </div>
                     <div className="prompt-example-result-item">
                       <div className="prompt-example-result-item-img">
-                        <img src="/images/carousel/han.jpeg" alt="" loading="lazy" decoding="async" />
+                        <img src="/images/home/collectin.jpeg" alt="" loading="lazy" decoding="async" />
                         <div className="hero-img-overlay"></div>
                       </div>
                       <div className="prompt-example-result-item-title">
@@ -307,7 +307,7 @@ export default function Home() {
                 </p>
                 <div className="case-studies-item-inner-img">
                   <img
-                    src="/images/carousel/bag1.png"
+                    src="/images/home/collection2.png"
                     alt="Futuristic AI-generated art"
                     loading="lazy"
                     decoding="async"
@@ -333,7 +333,7 @@ export default function Home() {
                 </p>
                 <div className="case-studies-item-inner-img">
                   <img
-                    src="/images/carousel/bag2.png"
+                    src="/images/home/cuttingbag.png"
                     alt="AI-driven fashion design showcase"
                     loading="lazy"
                     decoding="async"
@@ -354,7 +354,7 @@ export default function Home() {
                 <p className="primary">[ ADVERTISING FUNDS SUSTAINABILITY ]</p>
                 <div className="case-studies-item-inner-img">
                   <img
-                    src="/images/carousel/bag3.png"
+                    src="/images/home/puffy.jpeg"
                     alt="AI-curated artwork showcase"
                     loading="lazy"
                     decoding="async"
@@ -375,7 +375,7 @@ export default function Home() {
           </div>
           <div className="case-studies-items-images col">
             <div className="case-studies-img case-studies-img-1">
-              <img src="/images/carousel/bag2.png" alt="" loading="lazy" decoding="async" />
+              <img src="/images/home/cuttingbag.png" alt="" loading="lazy" decoding="async" />
               <div className="hero-img-overlay"></div>
               <div className="case-studies-img-link">
                 <Link href="/archive">
@@ -387,7 +387,7 @@ export default function Home() {
               </div>
             </div>
             <div className="case-studies-img case-studies-img-2">
-              <img src="/images/carousel/rebagonwall.png" alt="" loading="lazy" decoding="async" />
+              <img src="/images/home/warehse.png" alt="" loading="lazy" decoding="async" />
               <div className="hero-img-overlay"></div>
               <div className="case-studies-img-link">
                 <Link href="/archive">
@@ -399,7 +399,7 @@ export default function Home() {
               </div>
             </div>
             <div className="case-studies-img case-studies-img-3">
-              <img src="/images/carousel/bag4.png" alt="" loading="lazy" decoding="async" />
+              <img src="/images/home/landfill.jpg" alt="" loading="lazy" decoding="async" />
               <div className="hero-img-overlay"></div>
               <div className="case-studies-img-link">
                 <Link href="/archive">
