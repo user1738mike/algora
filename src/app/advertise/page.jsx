@@ -28,11 +28,26 @@ gsap.registerPlugin(ScrollTrigger, useGSAP);
 
 const WHATSAPP_NUMBER = "254720611256";
 
+const productImages = [
+  "/images/carousel/bag1.png",
+  "/images/carousel/bag2.png",
+  "/images/carousel/bag3.png",
+  "/images/carousel/bag4.png",
+  "/images/carousel/bag5.png",
+  "/images/carousel/bag6.png",
+  "/images/carousel/bag7.png",
+  "/images/carousel/bag8.png",
+  "/images/carousel/handmade.jfif",
+  "/images/carousel/han.jpeg",
+  "/images/carousel/rebagonwall.png",
+  "/images/carousel/wbag.jpg",
+];
+
 const products = [
   {
     id: 1,
     name: "Everyday Pouch",
-    image: "/images/home/newbag1.jpeg",
+    image: productImages[0],
     price: 1500,
     oldPrice: 2000,
     category: "Pouches",
@@ -49,7 +64,7 @@ const products = [
   {
     id: 2,
     name: "Mini Carry Pouch",
-    image: "/images/home/newbag2.jpeg",
+    image: productImages[1],
     price: 1500,
     oldPrice: 2000,
     category: "Mini Pouch",
@@ -66,7 +81,7 @@ const products = [
   {
     id: 3,
     name: "Totte",
-    image: "/images/home/newbag10.jpeg",
+    image: productImages[2],
     price: 2500,
     oldPrice: 3000,
     category: "Totte Bags",
@@ -83,7 +98,7 @@ const products = [
   {
     id: 4,
     name: "Utility Shopper",
-    image: "/images/home/newbag4.jpeg",
+    image: productImages[3],
     price: 2500,
     oldPrice: 3000,
     category: "Shoppers Backpack",
@@ -100,7 +115,7 @@ const products = [
   {
     id: 5,
     name: "Signature Rebag",
-    image: "/images/home/newbag5.jpeg",
+    image: productImages[4],
     price: 2500,
     oldPrice: 3000,
     category: "Signature Rebag",
@@ -117,7 +132,7 @@ const products = [
   {
     id: 6,
     name: "Weekend Carryall",
-    image: "/images/home/newbag6.jpeg",
+    image: productImages[5],
     price: 2500,
     oldPrice: 3000,
     category: "Carryalls",
@@ -134,7 +149,7 @@ const products = [
   {
     id: 7,
     name: "Structured Handbag",
-    image: "/images/home/shopp.jpeg",
+    image: productImages[6],
     price: 2500,
     oldPrice: 3000,
     category: "Handbags",
@@ -151,7 +166,7 @@ const products = [
   {
     id: 8,
     name: "Structured Handbag Mini",
-    image: "/images/home/newbag7.jpeg",
+    image: productImages[7],
     price: 2500,
     oldPrice: 3000,
     category: "Handbags",
@@ -168,7 +183,7 @@ const products = [
   {
     id: 9,
     name: "City Fold Tote",
-    image: "/images/home/newbag10.jpeg",
+    image: productImages[8],
     price: 2500,
     oldPrice: 3000,
     category: "Totes",
@@ -185,7 +200,7 @@ const products = [
   {
     id: 10,
     name: "Modern Pouch Bag",
-    image: "/images/home/newbag11.jpeg",
+    image: productImages[9],
     price: 1500,
     oldPrice: 2000,
     category: "Pouch Bags",
@@ -202,7 +217,7 @@ const products = [
   {
     id: 11,
     name: "Essential Day Bag",
-    image: "/images/home/redbag.jpg",
+    image: productImages[10],
     price: 2500,
     oldPrice: 3000,
     category: "Day Bags",
@@ -219,7 +234,7 @@ const products = [
   {
     id: 12,
     name: "Refined Market Tote",
-    image: "/images/home/newbag15.png",
+    image: productImages[11],
     price: 2500,
     oldPrice: 3000,
     category: "Totes",
@@ -236,7 +251,7 @@ const products = [
   {
     id: 13,
     name: "Urban Utility Tote",
-    image: "/images/home/newbag16.png",
+    image: productImages[0],
     price: 2500,
     oldPrice: 3000,
     category: "Totes",
@@ -253,7 +268,7 @@ const products = [
   {
     id: 14,
     name: "Heritage Carry Tote",
-    image: "/images/home/newbag32.png",
+    image: productImages[1],
     price: 2500,
     oldPrice: 3000,
     category: "Totes",
@@ -270,7 +285,7 @@ const products = [
   {
     id: 15,
     name: "Commuter Fold Bag",
-    image: "/images/home/newbag18.png",
+    image: productImages[2],
     price: 2500,
     oldPrice: 3000,
     category: "Day Bags",
@@ -287,7 +302,7 @@ const products = [
   {
     id: 16,
     name: "Artisan Market Carrier",
-    image: "/images/home/newbag19.png",
+    image: productImages[3],
     price: 2500,
     oldPrice: 3000,
     category: "Carryalls",
@@ -304,7 +319,7 @@ const products = [
   {
     id: 17,
     name: "Softline Shoulder Tote",
-    image: "/images/home/newbag20.png",
+    image: productImages[4],
     price: 2500,
     oldPrice: 3000,
     category: "Handbags",
@@ -321,7 +336,7 @@ const products = [
   {
     id: 18,
     name: "Eco Weekender Duffel",
-    image: "/images/home/newbag17.png",
+    image: productImages[5],
     price: 1500,
     oldPrice: 2000,
     category: "Carryalls",
@@ -338,7 +353,7 @@ const products = [
   {
     id: 19,
     name: "Minimal City Satchel",
-    image: "/images/home/newbag24.png",
+    image: productImages[6],
     price: 1500,
     oldPrice: 2000,
     category: "Handbags",
@@ -355,7 +370,7 @@ const products = [
   {
     id: 20,
     name: "Canvas Utility Shopper",
-    image: "/images/home/newbag19.png",
+    image: productImages[7],
     price: 2500,
     oldPrice: 3000,
     category: "Shoppers Backpack",
@@ -372,7 +387,7 @@ const products = [
   {
     id: 21,
     name: "Patchwork Story Tote",
-    image: "/images/home/newbag20.png",
+    image: productImages[8],
     price: 2500,
     oldPrice: 3000,
     category: "Totes",
@@ -389,7 +404,7 @@ const products = [
   {
     id: 22,
     name: "Compact Metro Pouch",
-    image: "/images/home/newbag22.png",
+    image: productImages[9],
     price: 2500,
     oldPrice: 3000,
     category: "Pouch Bags",
@@ -406,7 +421,7 @@ const products = [
   {
     id: 23,
     name: "Structured Office Tote",
-    image: "/images/home/newbag15.png",
+    image: productImages[10],
     price: 2500,
     oldPrice: 3000,
     category: "Totes",
@@ -423,7 +438,7 @@ const products = [
   {
     id: 24,
     name: "Sculpted Everyday Bag",
-    image: "/images/home/newbag23.png",
+    image: productImages[11],
     price: 2500,
     oldPrice: 3000,
     category: "Day Bags",
@@ -440,7 +455,7 @@ const products = [
   {
     id: 25,
     name: "Elevated Travel Carry",
-    image: "/images/home/newbag24.png",
+    image: productImages[0],
     price: 1500,
     oldPrice: 2000,
     category: "Carryalls",
@@ -457,7 +472,7 @@ const products = [
   {
     id: 26,
     name: "Classic Market Shoulder Bag",
-    image: "/images/home/newbag19.png",
+    image: productImages[1],
     price: 2500,
     oldPrice: 3000,
     category: "Handbags",
@@ -474,7 +489,7 @@ const products = [
   {
     id: 27,
     name: "Modern Artisan Shopper",
-    image: "/images/home/newbag25.png",
+    image: productImages[2],
     price: 2500,
     oldPrice: 3000,
     category: "Shoppers Backpack",
@@ -491,7 +506,7 @@ const products = [
   {
     id: 28,
     name: "Signature Fold Handbag",
-    image: "/images/home/newbag18.png",
+    image: productImages[3],
     price: 2500,
     oldPrice: 3000,
     category: "Handbags",
@@ -508,10 +523,10 @@ const products = [
 ];
 
 const heroImages = [
-  "/images/home/floral.png",
-  "/images/home/newbag10.jpeg",
-  "/images/home/pouche.png",
-  "/images/home/newbag10.jpeg",
+  "/images/carousel/bag1.png",
+  "/images/carousel/bag2.png",
+  "/images/carousel/bag3.png",
+  "/images/carousel/bag4.png",
 ];
 
 const colorOptions = [

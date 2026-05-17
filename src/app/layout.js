@@ -1,6 +1,7 @@
 import { Suspense } from "react";
 import ProgressBar from "../components/ProgressBar/ProgressBar.jsx";
 import Navbar from "../components/Navbar/Navbar.jsx";
+import RouteRefresh from "../components/RouteRefresh/RouteRefresh.jsx";
 
 import "./globals.css";
 
@@ -16,6 +17,7 @@ export default function RootLayout({ children }) {
       <body>
         <Suspense>
           <ProgressBar />
+          <RouteRefresh />
         </Suspense>
         <Navbar />
         {children}
